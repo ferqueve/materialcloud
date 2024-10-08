@@ -1,0 +1,35 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+.progress {
+    height: 5px;
+}
+
+.fas {
+    margin-right: 10px;
+}
+
+table {
+    font-size: 0.9em;
+}
+
+.table th {
+    background-color: #f1f3f5;
+}

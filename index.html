@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos Avanzados de Cloud Computing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="presentation" class="card">
+            <div class="card-body">
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <div class="slide active">
+                    <h1 class="text-center mb-4"><i class="fas fa-cloud"></i> Conceptos Básicos de Cloud Computing</h1>
+                    <p class="text-center">SaaS, PaaS, e IaaS: Los Pilares de la Nube</p>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-layer-group"></i> Modelos de Servicio en la Nube</h2>
+                    <ul>
+                        <li><strong>SaaS</strong>: Software as a Service</li>
+                        <li><strong>PaaS</strong>: Platform as a Service</li>
+                        <li><strong>IaaS</strong>: Infrastructure as a Service</li>
+                    </ul>
+                    <p>Cada modelo ofrece diferentes niveles de control y responsabilidad para el usuario.</p>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-laptop-code"></i> SaaS (Software as a Service)</h2>
+                    <p>Software entregado a través de internet, sin necesidad de instalación local.</p>
+                    <h5>Características:</h5>
+                    <ul>
+                        <li>Accesible vía web browser</li>
+                        <li>No requiere mantenimiento por parte del usuario</li>
+                        <li>Actualizaciones automáticas</li>
+                        <li>Ejemplos: Google Workspace, Salesforce, Dropbox</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-server"></i> PaaS (Platform as a Service)</h2>
+                    <p>Plataforma para desarrollar, ejecutar y gestionar aplicaciones sin la complejidad de mantener la infraestructura.</p>
+                    <h5>Características:</h5>
+                    <ul>
+                        <li>Herramientas de desarrollo y despliegue</li>
+                        <li>Gestión de bases de datos</li>
+                        <li>Escalabilidad automática</li>
+                        <li>Ejemplos: Google App Engine, Heroku, Microsoft Azure App Service</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-network-wired"></i> IaaS (Infrastructure as a Service)</h2>
+                    <p>Recursos de computación, almacenamiento y redes bajo demanda.</p>
+                    <h5>Características:</h5>
+                    <ul>
+                        <li>Máquinas virtuales</li>
+                        <li>Almacenamiento</li>
+                        <li>Redes</li>
+                        <li>Máximo control sobre los recursos</li>
+                        <li>Ejemplos: Amazon EC2, Google Compute Engine, Microsoft Azure VMs</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-balance-scale"></i> Comparación de Responsabilidades</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Componente</th>
+                                    <th>IaaS</th>
+                                    <th>PaaS</th>
+                                    <th>SaaS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Aplicaciones</td>
+                                    <td>Usuario</td>
+                                    <td>Usuario</td>
+                                    <td>Proveedor</td>
+                                </tr>
+                                <tr>
+                                    <td>Datos</td>
+                                    <td>Usuario</td>
+                                    <td>Usuario</td>
+                                    <td>Usuario</td>
+                                </tr>
+                                <tr>
+                                    <td>Runtime</td>
+                                    <td>Usuario</td>
+                                    <td>Proveedor</td>
+                                    <td>Proveedor</td>
+                                </tr>
+                                <tr>
+                                    <td>Middleware</td>
+                                    <td>Usuario</td>
+                                    <td>Proveedor</td>
+                                    <td>Proveedor</td>
+                                </tr>
+                                <tr>
+                                    <td>SO</td>
+                                    <td>Usuario</td>
+                                    <td>Proveedor</td>
+                                    <td>Proveedor</td>
+                                </tr>
+                                <tr>
+                                    <td>Virtualización</td>
+                                    <td>Proveedor</td>
+                                    <td>Proveedor</td>
+                                    <td>Proveedor</td>
+                                </tr>
+                                <tr>
+                                    <td>Servidores</td>
+                                    <td>Proveedor</td>
+                                    <td>Proveedor</td>
+                                    <td>Proveedor</td>
+                                </tr>
+                                <tr>
+                                    <td>Almacenamiento</td>
+                                    <td>Proveedor</td>
+                                    <td>Proveedor</td>
+                                    <td>Proveedor</td>
+                                </tr>
+                                <tr>
+                                    <td>Redes</td>
+                                    <td>Proveedor</td>
+                                    <td>Proveedor</td>
+                                    <td>Proveedor</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-chart-line"></i> Ventajas del Cloud Computing</h2>
+                    <ul>
+                        <li>Reducción de costos de infraestructura</li>
+                        <li>Escalabilidad y flexibilidad</li>
+                        <li>Accesibilidad global</li>
+                        <li>Actualizaciones automáticas</li>
+                        <li>Recuperación ante desastres</li>
+                        <li>Seguridad mejorada</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-bucket"></i> Bucket</h2>
+                    <p>Un contenedor para almacenar objetos en servicios de almacenamiento en la nube.</p>
+                    <ul>
+                        <li>Nombre único a nivel global</li>
+                        <li>Almacenamiento ilimitado de objetos</li>
+                        <li>Control de versiones y políticas de acceso</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-server"></i> Cluster</h2>
+                    <p>Grupo de servidores o instancias que trabajan juntos como un sistema único.</p>
+                    <h5>Tipos comunes:</h5>
+                    <ul>
+                        <li>Clusters de alta disponibilidad</li>
+                        <li>Clusters de balanceo de carga</li>
+                        <li>Clusters de computación para big data</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-tasks"></i> Job</h2>
+                    <p>Tarea o proceso que se ejecuta en los recursos de la nube.</p>
+                    <ul>
+                        <li>Tienen un inicio y un fin definidos</li>
+                        <li>Pueden ser programados o activados por eventos</li>
+                        <li>Comunes en procesamiento de big data</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-microchip"></i> Instance</h2>
+                    <p>Máquina virtual en la nube, esencialmente un servidor virtual.</p>
+                    <ul>
+                        <li>Escalables vertical y horizontalmente</li>
+                        <li>Diferentes configuraciones de recursos</li>
+                        <li>Pueden ser efímeras o persistentes</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-box"></i> Container</h2>
+                    <p>Unidad estándar de software que empaqueta código y dependencias.</p>
+                    <ul>
+                        <li>Ligereza y eficiencia</li>
+                        <li>Portabilidad entre entornos</li>
+                        <li>Aislamiento de aplicaciones</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-balance-scale"></i> Load Balancer</h2>
+                    <p>Distribuye el tráfico de red o solicitudes entre servidores o instancias.</p>
+                    <ul>
+                        <li>Mejora disponibilidad y capacidad de respuesta</li>
+                        <li>Realiza comprobaciones de salud</li>
+                        <li>Maneja cifrado SSL/TLS</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-network-wired"></i> VPC (Virtual Private Cloud)</h2>
+                    <p>Red virtual aislada lógicamente en la nube pública.</p>
+                    <ul>
+                        <li>Mayor seguridad y aislamiento</li>
+                        <li>Control sobre la topología de red</li>
+                        <li>Conexión segura con redes on-premises</li>
+                    </ul>
+                </div>
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-hands-helping"></i> Responsabilidades en la Nube</h2>
+                    <p>División de tareas de gestión y seguridad entre el proveedor de la nube y el cliente.</p>
+                    <ul>
+                        <li>Varía según el modelo de servicio (IaaS, PaaS, SaaS)</li>
+                        <li>El cliente siempre es responsable de sus datos</li>
+                        <li>La seguridad es una responsabilidad compartida</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-broadcast-tower"></i> Pub/Sub (Publicación/Suscripción)</h2>
+                    <p>Patrón de mensajería para comunicación asíncrona entre servicios.</p>
+                    <ul>
+                        <li>Publishers envían mensajes a temas</li>
+                        <li>Subscribers reciben mensajes de temas a los que están suscritos</li>
+                        <li>Desacopla componentes de la aplicación</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-bolt"></i> Cloud Functions</h2>
+                    <p>Pequeñas piezas de código que se ejecutan en respuesta a eventos.</p>
+                    <ul>
+                        <li>Sin necesidad de gestionar infraestructura</li>
+                        <li>Escalado automático</li>
+                        <li>Pago solo por el tiempo de ejecución</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-rocket"></i> Deployments (Despliegues)</h2>
+                    <p>Proceso de poner una aplicación o servicio en producción en la nube.</p>
+                    <ul>
+                        <li>Incluye configuración y distribución del código</li>
+                        <li>Puede ser manual o automatizado (CI/CD)</li>
+                        <li>Estrategias: rolling update, blue-green, canary</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-box"></i> Containers (Contenedores)</h2>
+                    <p>Unidades estándar de software que empaquetan código y dependencias.</p>
+                    <ul>
+                        <li>Portabilidad entre diferentes entornos</li>
+                        <li>Aislamiento de aplicaciones</li>
+                        <li>Eficiencia en recursos comparado con VMs</li>
+                    </ul>
+                </div>
+
+                <div class="slide">
+                    <h2 class="mb-4"><i class="fas fa-cloud-upload-alt"></i> Serverless Computing</h2>
+                    <p>Modelo donde el proveedor gestiona dinámicamente la infraestructura.</p>
+                    <ul>
+                        <li>El desarrollador se enfoca solo en el código</li>
+                        <li>Escalado automático y alta disponibilidad</li>
+                        <li>Pago por uso, no por capacidad reservada</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4 text-center">
+                    <button id="prevSlide" class="btn btn-secondary"><i class="fas fa-chevron-left"></i> Anterior</button>
+                    <button id="nextSlide" class="btn btn-primary">Siguiente <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
